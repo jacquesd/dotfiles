@@ -23,6 +23,8 @@
       "background-tips"
       "exception-reporting"
       "metrics"
+      "markdown-preview"
+      "markdown-preview-plus"
     ]
   "spell-check":
     grammars: [
@@ -34,3 +36,7 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    useGitHubStyle: true
+    enablePandoc: true
