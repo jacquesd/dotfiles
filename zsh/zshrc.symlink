@@ -22,12 +22,6 @@ do
   source $file
 done
 
-# load everything but the path and completion files
-for file in ${${${config_files:#*/path.zsh}:#*/completion.zsh}:#*/zsh/antigen-hs/*}
-do
-  source $file
-done
-
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
@@ -40,5 +34,11 @@ done
 
 # load antigen-hs
 source $ZSH/zsh/antigen-hs/init.zsh
+
+# load everything but the path and completion files
+for file in ${${${config_files:#*/path.zsh}:#*/completion.zsh}:#*/zsh/antigen-hs/*}
+do
+  source $file
+done
 
 unset config_files
