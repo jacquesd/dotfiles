@@ -1,11 +1,13 @@
 "*":
-  editor:
-    showIndentGuide: true
-    fontFamily: "Menlo"
-    invisibles: {}
-    fontSize: 15
-    softWrapAtPreferredLineLength: true
   core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "markdown-preview"
+      "markdown-preview-plus"
+    ]
+    hideGitIgnoredFiles: true
     ignoredNames: [
       ".bundle"
       ".git"
@@ -18,14 +20,23 @@
       "unity-ui"
       "glacier-syntax"
     ]
-    hideGitIgnoredFiles: true
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "markdown-preview"
-      "markdown-preview-plus"
-    ]
+  editor:
+    fontFamily: "Input Mono Condensed"
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+    tabLength: 4
+  "gist-it":
+    openAfterCreate: true
+    userToken: "801157d04172283e53e881af6e8cdb47a7c5e51d"
+  hex: {}
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    enablePandoc: true
+    useGitHubStyle: true
+  "release-notes":
+    viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
       "text.plain"
@@ -34,9 +45,3 @@
     ]
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "markdown-preview-plus":
-    enableLatexRenderingByDefault: true
-    useGitHubStyle: true
-    enablePandoc: true
