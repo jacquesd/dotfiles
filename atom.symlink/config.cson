@@ -1,4 +1,6 @@
 "*":
+  aligner:
+    ":-alignment": "left"
   core:
     disabledPackages: [
       "background-tips"
@@ -6,6 +8,8 @@
       "metrics"
       "markdown-preview"
       "markdown-preview-plus"
+      "platformio-ide"
+      "platformio-ide-terminal"
     ]
     hideGitIgnoredFiles: true
     ignoredNames: [
@@ -26,15 +30,21 @@
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
-    tabLength: 4
+    tabType: "hard"
   "gist-it":
     openAfterCreate: true
     userToken: "801157d04172283e53e881af6e8cdb47a7c5e51d"
   hex: {}
+  linter: {}
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
     useGitHubStyle: true
+  "platformio-ide":
+    showHomeScreen: false
+  "platformio-ide-terminal":
+    core:
+      autoRunCommand: "export PATH=/Users/kodikodytis/dotfiles/atom.symlink/packages/platformio-ide/penv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:./bin:/usr/local/sbin:/Users/kodikodytis/dotfiles/bin:/Users/kodikodytis/.rbenv/shims:/Users/kodikodytis/code/go/bin:/usr/local/bin"
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
@@ -42,6 +52,10 @@
       "text.plain"
       "source.gfm"
       "text.git-commit"
+      "source.cpp"
+      "source.c"
     ]
+  "tool-bar":
+    position: "Left"
   welcome:
     showOnStartup: false
