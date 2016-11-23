@@ -20,11 +20,13 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "limited"
     themes: [
       "unity-ui"
       "glacier-syntax"
     ]
   editor:
+    autoIndent: false
     fontFamily: "Input Mono Condensed"
     fontSize: 12
     invisibles: {}
